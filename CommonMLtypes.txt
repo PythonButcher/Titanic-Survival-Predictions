@@ -1,0 +1,109 @@
+Most common machine learning algorithms
+
+
+    Linear Regression
+    Logistic Regression
+    Decision Tree
+    SVM
+    Naive Bayes
+    kNN
+    K-Means
+    Random Forest
+    Dimensionality Reduction Algorithms
+    Gradient Boosting algorithms
+        GBM
+        XGBoost
+        LightGBM
+        CatBoost
+----------------------------------------------------------------------------------------------------------------------------
+
+1. Linear Regression
+
+It is used to estimate real values (cost of houses, number of calls, total sales etc.) based on continuous variable(s). Here, we establish relationship between independent and dependent variables by fitting a best line. This best fit line is known as regression line and represented by a linear equation Y= a *X + b.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2. Logistic Regression
+
+Don’t get confused by its name! It is a classification not a regression algorithm. It is used to estimate discrete values ( Binary values like 0/1, yes/no, true/false ) based on given set of independent variable(s). In simple words, it predicts the probability of occurrence of an event by fitting data to a sigmoid function. Hence, it is also known as logit regression. Since, it predicts the probability, its output values lies between 0 and 1 (as expected).
+3. Decision Tree
+
+This is one of my favorite algorithm and I use it quite frequently. It is a type of supervised learning algorithm that is mostly used for classification problems. Surprisingly, it works for both categorical and continuous dependent variables. In this algorithm, we split the population into two or more homogeneous sets. This is done based on most significant attributes/ independent variables to make as distinct groups as possible. For more details, you can read: Decision Tree Simplified.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+4. SVM (Support Vector Machine)
+
+It is a classification method. In this algorithm, we plot each data item as a point in n-dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate.
+
+For example, if we only had two features like Height and Hair length of an individual, we’d first plot these two variables in two dimensional space where each point has two co-ordinates (these co-ordinates are known as Support Vectors)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5. Naive Bayes
+
+It is a classification technique based on Bayes’ theorem with an assumption of independence between predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. For example, a fruit may be considered to be an apple if it is red, round, and about 3 inches in diameter. Even if these features depend on each other or upon the existence of the other features, a naive Bayes classifier would consider all of these properties to independently contribute to the probability that this fruit is an apple.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6. kNN (k- Nearest Neighbors)
+
+It can be used for both classification and regression problems. However, it is more widely used in classification problems in the industry. K nearest neighbors is a simple algorithm that stores all available cases and classifies new cases by a majority vote of its k neighbors. The case being assigned to the class is most common amongst its K nearest neighbors measured by a distance function.
+
+These distance functions can be Euclidean, Manhattan, Minkowski and Hamming distance. First three functions are used for continuous function and fourth one (Hamming) for categorical variables. If K = 1, then the case is simply assigned to the class of its nearest neighbor. At times, choosing K turns out to be a challenge while performing kNN modeling.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7. K-Means
+
+It is a type of unsupervised algorithm which solves the clustering problem. Its procedure follows a simple and easy way to classify a given data set through a certain number of clusters (assume k clusters). Data points inside a cluster are homogeneous and heterogeneous to peer groups.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+8. Random Forest
+
+Random Forest is a trademark term for an ensemble of decision trees. In Random Forest, we’ve collection of decision trees (so known as “Forest”). To classify a new object based on attributes, each tree gives a classification and we say the tree “votes” for that class. The forest chooses the classification having the most votes (over all the trees in the forest).
+
+----------------------------------------------------------------------------------------------------------------------------
+
+9. Dimensionality Reduction Algorithms
+
+In the last 4-5 years, there has been an exponential increase in data capturing at every possible stages. Corporates/ Government Agencies/ Research organisations are not only coming with new sources but also they are capturing data in great detail.
+
+For example: E-commerce companies are capturing more details about customer like their demographics, web crawling history, what they like or dislike, purchase history, feedback and many others to give them personalized attention more than your nearest grocery shopkeeper.
+
+As a data scientist, the data we are offered also consist of many features, this sounds good for building good robust model but there is a challenge. How’d you identify highly significant variable(s) out 1000 or 2000? In such cases, dimensionality reduction algorithm helps us along with various other algorithms like Decision Tree, Random Forest, PCA, Factor Analysis, Identify based on correlation matrix, missing value ratio and others.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+10. Gradient Boosting Algorithms
+
+10.1. GBM
+
+GBM is a boosting algorithm used when we deal with plenty of data to make a prediction with high prediction power. Boosting is actually an ensemble of learning algorithms which combines the prediction of several base estimators in order to improve robustness over a single estimator. It combines multiple weak or average predictors to a build strong predictor. These boosting algorithms always work well in data science competitions like Kaggle, AV Hackathon, CrowdAnalytix.
+
+----------------------------------------------------------------------------------------------------------------------------
+10.2. XGBoost
+
+Another classic gradient boosting algorithm that’s known to be the decisive choice between winning and losing in some Kaggle competitions.
+
+The XGBoost has an immensely high predictive power which makes it the best choice for accuracy in events as it possesses both linear model and the tree learning algorithm, making the algorithm almost 10x faster than existing gradient booster techniques.
+
+----------------------------------------------------------------------------------------------------------------------------
+10.3. LightGBM
+
+LightGBM is a gradient boosting framework that uses tree based learning algorithms. It is designed to be distributed and efficient with the following advantages:
+
+    Faster training speed and higher efficiency
+    Lower memory usage
+    Better accuracy
+    Parallel and GPU learning supported
+    Capable of handling large-scale data
+    The framework is a fast and high-performance gradient boosting one based on decision tree algorithms, used for ranking, classification and many other machine learning tasks. It was developed under the Distributed Machine Learning Toolkit Project of Microsoft.
+
+----------------------------------------------------------------------------------------------------------------------------
+10.4. Catboost
+
+CatBoost is a recently open-sourced machine learning algorithm from Yandex. It can easily integrate with deep learning frameworks like Google’s TensorFlow and Apple’s Core ML.
+
+The best part about CatBoost is that it does not require extensive data training like other ML models, and can work on a variety of data formats; not undermining how robust it can be.
